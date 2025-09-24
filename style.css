@@ -1,0 +1,270 @@
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 3rem auto 2rem auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: 'Crimson Pro', serif;
+}
+
+header h1 .english-name {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #666;
+  margin-left: 0.5rem;
+  font-family: 'Crimson Pro', serif;
+}
+
+nav {
+  margin: 0.5rem 0 1.5rem 0;
+  text-align: left;
+  font-family: 'Crimson Pro', serif;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+}
+
+nav a,
+nav .dropbtn {
+  color: #92140c;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.2rem;
+  font-size: 1.1rem;
+  font-family: 'Crimson Pro', serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+nav a:hover,
+nav .dropbtn:hover {
+  text-decoration: underline;
+}
+
+a:not(nav a):not(nav .dropbtn) {
+  text-decoration: none;
+}
+
+a:not(nav a):not(nav .dropbtn):hover {
+  text-decoration: none;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropbtn {
+  outline: none;
+  font-family: 'Crimson Pro', serif;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 1;
+  border-radius: 0 0 6px 6px;
+  left: 0;
+}
+
+nav .dropdown-content a {
+  color: #92140c;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid #f2bc94;
+  font-family: 'Crimson Pro', serif;
+  background: none;
+}
+
+nav .dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+nav .dropdown-content a:hover {
+  background: #fcefee;
+}
+
+nav .dropdown:hover .dropdown-content,
+nav .dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #7a1c17;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  border-bottom: 1px solid #f2bc94;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  font-family: 'Crimson Pro', serif;
+}
+
+section {
+  margin-bottom: 2.2rem;
+}
+
+.about-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.about-text {
+  flex: 1;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h3 {
+  font-size: 1.2em;
+  color: #7a1c17;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Crimson Pro', serif;
+  border-bottom: 1px solid #f2bc94;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.about-section p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.name-note {
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.about-image {
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .about-image {
+    align-self: center;
+    order: -1;
+  }
+  
+  .profile-photo {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+ul {
+  padding-left: 1.1rem;
+  margin-top: 0.4rem;
+}
+
+li {
+  margin-bottom: 1.2rem;
+}
+
+.desc {
+  color: #444;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: left;
+  color: #999;
+  font-size: 0.98rem;
+  font-family: 'Crimson Pro', serif;
+}
+
+.chinese-name {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 1.2em;
+  color: #7a1c17;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+header h1 .chinese-name {
+  font-size: 1.4em;
+  color: #222;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+  }
+  nav, header h1, footer {
+    text-align: center;
+  }
+}
